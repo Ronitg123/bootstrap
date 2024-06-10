@@ -1,33 +1,45 @@
 <!doctype html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-        <style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
         body{
   font-family: "Palanquin Dark", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
+  font-size: 12px;
 }
         </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-    <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg">
         <div class="container-fluid me-3">
-            <a class="navbar-brand mx-4" href="#">
-                <img src="logo.jpg" alt="Bootstrap" width="100" height="100">
-              </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand mx-4" href="#">
+            <img src="logo.jpg" alt="Bootstrap" width="100">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -36,39 +48,50 @@
                 <a class="nav-link active" aria-current="page" href="#">MEN</a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#">WOMEN</a>
+                <a class="nav-link" href="#"><strong>WOMEN</strong></a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#">KIDS</a>
+                <a class="nav-link" href="#"><strong>KIDS</strong></a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#">HOME & LIVING</a>
+                <a class="nav-link" href="#"><strong>HOME & LIVING</strong></a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#">BEAUTY</a>
+                <a class="nav-link" href="#"><strong>BEAUTY</strong></a>
               </li>
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#">STUDIO</a>
+                <a class="nav-link" href="#"><strong>STUDIO</strong></a>
               </li>
-              <h6><span class="badge text-bg-danger">New</span></h6>
+              <h6><span class="badge  bg-danger">New</span></h6>
             </ul>
             <form class="d-flex mx-5 w-50" role="search">
-              <input class="form-control me-2 py-3" type="search" placeholder="Search for product,brands & more" aria-label="Search">
-            </form>
+              <input class="form-control me-2 py-3" type="search"
+                  placeholder="Search for product, brands & more"
+                  aria-label="Search">
+              <button class="btn btn-outline-secondary" type="submit">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+          </form>
           </div>
-          <p>Profile</p>
-          <div class="wish">
-              <p>wishlist</p>
+          <div class="profile me-5 mt-3">
+            <span class="d-flex justify-content-center" style="font-size: 17px;"><i class="fa-regular fa-user"></i></span>
+            <p><strong>Profile</strong></p>
           </div>
-          <div class="bag">
-            <p>bag</p>
+          <div class="wish me-5 mt-3">
+            <span class="d-flex justify-content-center" style="font-size: 17px;"><i class="fa-regular fa-heart"></i></span>
+            <p><strong>wishlist</strong></p>
+          </div>
+          <div class="bag me-5 mt-3">
+            <span  class="d-flex justify-content-center" style="font-size: 17px;"><i class="fa-solid fa-bag-shopping"></i></span>
+            <p><strong>bag</strong></p>
           </div>
         </div>
       </nav>
     </header>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+  </body>
 
 </html>
